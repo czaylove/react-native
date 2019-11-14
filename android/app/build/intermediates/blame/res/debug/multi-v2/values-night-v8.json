@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/luxstay/Desktop/demo/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/Users/luxstay/Desktop/react-native/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "/Users/luxstay/.gradle/caches/transforms-2/files-2.1/59a94674f52f74102363f598d99bd08d/res/values-night-v8/values-night-v8.xml",

@@ -7,6 +7,7 @@
  */
 
 import React from 'react';
+import ErrorInputTextboxExample from './components/pageLogin'
 import {
   View,
   ImageBackground,
@@ -16,6 +17,7 @@ import {
   TouchableHighlight,
   Button,
 } from 'react-native';
+import Logo from './logo';
 
 const App = () => {
   return (
@@ -26,6 +28,7 @@ const App = () => {
             'https://scontent.fhan3-2.fna.fbcdn.net/v/t1.15752-9/75453566_463820187584355_3539062788594860032_n.png?_nc_cat=107&_nc_oc=AQmagH7lO3k1cH-j8opbwl_W6BenpYhzZnisVJ4S4Mh50wgpNx27hHyEDcCM25FqULw&_nc_ht=scontent.fhan3-2.fna&oh=f6b00a94c99c9dc6382e09225d64df35&oe=5E41640C',
         }}
         style={{width: '100%', height: '100%'}}>
+        
         <View>
           <Text
             style={{
@@ -38,68 +41,109 @@ const App = () => {
           </Text>
         </View>
         <View style={{alignItems: 'center'}}>
-          <Image
-            style={{width: 160, height: 50, marginTop: 170}}
-            source={{
-              uri:
-                'https://scontent.fhan3-1.fna.fbcdn.net/v/t1.15752-9/74166090_462258821060195_4948554429600104448_n.png?_nc_cat=109&_nc_oc=AQlRi9iWQAiHR4WxCryVR_71ordyGHHSPps09QRX8-E4wgJ5rVLQ4WEfav6OYngo-Io&_nc_ht=scontent.fhan3-1.fna&oh=c5eed79a0457a73a34d8e164383034f0&oe=5E55BC1F',
-            }}
-          />
+          <Logo />
         </View>
-        <View style={{}}>
+        
+        <View style={{
+          paddingTop: 122,
+        }}>
           <TextInput
             style={{
-              height: 60,
-              width: 300,
+              marginLeft: 40,
+              height: 55,
+              width: '80%',
               borderColor: 'gray',
               borderWidth: 1,
-              backgroundColor: '#140F26',
               color: 'white',
+              borderRadius: 11,
+              opacity: 50,
             }}
+           
           />
         </View>
         <View>
           <TextInput
             style={{
-              height: 60,
-              width: 300,
+              height: 55,
+              marginTop: 20,
+              marginLeft: 40,
+              width: '80%',
               borderColor: 'gray',
               borderWidth: 1,
-              backgroundColor: '#140F26',
+              backgroundColor: '#0E1B2C',
+              color: 'white',
+              borderRadius: 11,
+              
             }}
           />
         </View>
-        <View>
+        <View style={{
+           paddingTop: 20,
+        }}>
           <TouchableHighlight>
             <View
               style={{
-                marginLeft: 30,
-                width: '90%',
-                height: 60,
+                marginLeft: 40,
+                width: '80%',
+                height: 55,
                 backgroundColor: '#725FFF',
                 borderRadius: 35,
               }}>
-              <Text>SIGN IN</Text>
+              <Text
+                style={{
+                  textAlign: 'center',
+                  marginTop: 17,
+                  color: 'white',
+                  fontSize: 15,
+                  fontWeight: 'bold',
+                 }}
+              >SIGN IN</Text>
             </View>
           </TouchableHighlight>
         </View>
-        <View>
+        <View style={{
+           paddingTop: 20,
+        }}>
           <Text
             style={{
               color: '#808D91',
-              paddingLeft: 40,
+              textAlign: 'center'
             }}>
             OR
           </Text>
         </View>
-        <View>
-          <Button
-            color="#2A545D"
-            title="CONTINUE WITH FACEBOOK"
-            style={{height: '100'}}
-          />
+        <View style={{
+           paddingTop: 20,
+        }}>
+        <TouchableHighlight>
+          
+            <View
+              style={{
+                marginLeft: 40,
+                width: '80%',
+                height: 55,
+                backgroundColor: '#2B545D',
+                borderRadius: 35,
+              }}>
+              <Text
+                style={{
+                  textAlign: 'center',
+                  marginTop: 17,
+                  color: 'white',
+                  fontSize: 15,
+                  fontWeight: 'bold',
+                 }}
+              >CONTINUE WITH FACEBOOK</Text>
+            </View>
+          </TouchableHighlight>
         </View>
-        <View style={{flex: 1, flexDirection: 'row', marginLeft: 10}}>
+        <View 
+        style={{
+          flex: 1, 
+          flexDirection: 'row', 
+          marginLeft: 10,
+          paddingTop: 20,
+        }}>
           <Text
             style={{
               color: '#808D91',
@@ -122,5 +166,4 @@ const App = () => {
     </>
   );
 };
-
 export default App;

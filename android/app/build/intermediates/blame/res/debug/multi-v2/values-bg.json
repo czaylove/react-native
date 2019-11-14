@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/luxstay/Desktop/demo/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml",
+            "outputFile": "/Users/luxstay/Desktop/react-native/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml",
             "map": [
                 {
                     "source": "/Users/luxstay/.gradle/caches/transforms-2/files-2.1/361912bad50fa5a6bc2b0e2228142437/res/values-bg/values-bg.xml",

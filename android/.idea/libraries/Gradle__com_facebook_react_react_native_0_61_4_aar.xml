@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.facebook.react:react-native:0.61.4@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7922ed3cf0e9bfdafa1110ddf95f6946/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/704ab091a954d34b854a9a30bba3db1b/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7922ed3cf0e9bfdafa1110ddf95f6946/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7922ed3cf0e9bfdafa1110ddf95f6946/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/704ab091a954d34b854a9a30bba3db1b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/704ab091a954d34b854a9a30bba3db1b/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../node_modules/react-native/android/com/facebook/react/react-native/0.61.4/react-native-0.61.4-javadoc.jar!/" />
