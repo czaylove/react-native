@@ -1,17 +1,39 @@
 import React from 'react';
-import {View, Text} from 'react-native';
-import {TouchableOpacity} from 'react-native-gesture-handler';
+import {View, Text, StyleSheet, Button, TouchableOpacity} from 'react-native';
+
 export default class Note extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
+    const todoItem = this.props.todoItem;
     return (
       <View>
-        <View key={this.props.keyvalue} />
-        <Text>{this.props.val.date}</Text>
-        <Text>{this.props.val.note}</Text>
-        <TouchableOpacity onPress={this.props.deleteMethod}>
-          <Text>S</Text>
+        <TouchableOpacity
+          onPress={() => this.props.toggleDone()}
+          style={styles.todoItem}>
+          <Text style={todoItem.done ? {color: '#AAAAAA'} : {color: '#313131'}}>
+            {todoItem.title}
+          </Text>
+          <Button
+            color="red"
+            title="Remove"
+            onPress={() => this.props.remove()}
+          />
         </TouchableOpacity>
       </View>
     );
   }
 }
+const styles = StyleSheet.create({
+  todoItem: {
+    width: '100%',
+    height: 40,
+    borderBottomColor: '#DDD',
+    borderBottomWidth: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingLeft: 15,
+  },
+});
